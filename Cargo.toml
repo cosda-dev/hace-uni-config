@@ -1,0 +1,13 @@
+[package]
+name = "hace-uni-config"
+version = "0.1.0"
+edition = "2021"
+description = "CONA build configuration resolution"
+
+[lib]
+name = "hace_uni_config"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+hace-uni-resolver = { path = "../resolver" }
